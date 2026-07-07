@@ -14,3 +14,6 @@ data/
 
 # Environment
 .env
+
+# Claude Code
+CLAUDE.md

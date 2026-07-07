@@ -3,7 +3,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 MEM0_CONFIG = {
-    "custom_instructions": "Always extract atomic facts. Never combine multiple facts into one memory. For example, 'User is Christian and was born in London on 1th April 1989' should be 3 separate memories: religion, birthplace, and birthday.",
+    "custom_instructions": "Always extract atomic facts. Never combine multiple facts into one memory. For example, 'User likes hiking and lives in NYC and works at Acme' should be 3 separate memories: hobby, location, and employer.",
     "llm": {
         "provider": "anthropic",
         "config": {

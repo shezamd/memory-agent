@@ -27,7 +27,7 @@ Each user message flows through a 3-node LangGraph pipeline:
 └─────────────────────┘
 ```
 
-**Memory extraction is automatic** — mem0 identifies discrete facts from each conversation turn (e.g. "user is from Leicester", "user prefers Python") and stores them as separate embeddings for precise retrieval later.
+**Memory extraction is automatic** — mem0 identifies discrete facts from each conversation turn (e.g. "user lives in NYC", "user prefers Python") and stores them as separate embeddings for precise retrieval later.
 
 ## Tech Stack
 

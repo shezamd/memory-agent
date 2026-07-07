@@ -9,21 +9,21 @@ The agent remembers facts you've shared in previous conversations — your prefe
 Each user message flows through a 3-node LangGraph pipeline:
 
 ```
-User Input
-    │
-    ▼
+      User Input
+          │
+          ▼
 ┌─────────────────────┐
-│  retrieve_memories   │  ← search mem0 for relevant past context
+│  retrieve_memories  │  ← search mem0 for relevant past context
 └─────────┬───────────┘
           │
           ▼
 ┌─────────────────────┐
-│  generate_response   │  ← call Claude with memories in system prompt
+│  generate_response  │  ← call Claude with memories in system prompt
 └─────────┬───────────┘
           │
           ▼
 ┌─────────────────────┐
-│   store_memories     │  ← save conversation turn, auto-extract facts
+│   store_memories    │  ← save conversation turn, auto-extract facts
 └─────────────────────┘
 ```
 
